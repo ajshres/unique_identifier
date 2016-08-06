@@ -20,9 +20,9 @@ function buildTimestampIdentifier(){
 	return newDate.substring(length-8,length);
 }
 function getUniqueIdentifier(){
-		var identifier = null;
-		do {
-			identifier = getRandomString();
-		} while(identifiers.indexOf(identifier)!=-1);
-		return identifier;
-	}
+	var identifier = null;
+	do {
+		identifier = getRandomString();
+	} while(identifiers.indexOf(identifier)!=-1);
+	return identifier;
+}
